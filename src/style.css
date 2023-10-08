@@ -1,1 +1,39 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background: green;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+   background: whitesmoke;
+   width: 30%;
+   height: 90%; 
+   border-radius: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    font-size: 180px;
+    font-family: 'Times New Roman';
+}
+
+.firstSymbol {
+    padding-right: 250px;
+    margin: 55px 0;
+}
+
+.secondSymbol {
+    padding-left: 250px;
+    margin: 55px 0;
+    transform: scaleY(-1);
+}
