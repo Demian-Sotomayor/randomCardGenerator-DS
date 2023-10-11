@@ -12,9 +12,10 @@ body {
 
 .card {
    background: whitesmoke;
-   width: 20vw;
+   width: auto;
    height: auto; 
    border-radius: 10px;
+   padding: 0px 20px;
 }
 
 img {
@@ -29,12 +30,12 @@ h2 {
 
 .firstSymbol {
     width: 40%;
-    margin: 40px 0;
+    margin: 40px 0px;
 }
 
 .secondSymbol {
     width: 40%;
     margin: 40px 0;
-    margin-left: 11vw; 
+    margin-left: 9vw; 
     transform: scaleY(-1);
 }
