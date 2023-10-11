@@ -22,29 +22,25 @@ function getRandomSymbol() {
   return cardSymbol[Math.floor(Math.random() * cardSymbol.length)]; 
 }
 
-// Actualizar número aleatorio
-function updateNumber() { 
+function updateNumber() {
   const randomNumber = getRandomNumber();
   initialNumber.textContent = randomNumber;
-
 }
 
-// Actualizar símbolo aleatorio
 function updateSymbol() {
   const randomSymbol = getRandomSymbol();
-  
   initialSymbol.src = randomSymbol;
 
-  document.querySelectorAll('.initialSymbol').forEach(symbol => {
-    symbol.src = randomSymbol; 
-  });
+  document.querySelectorAll('.initialSymbol').forEach( symbol => {
+    symbol.src = randomSymbol;
+  })
+
 }
 
-// Actualizar al cargar página
+
 updateNumber();
 updateSymbol();
 
-// Actualizar cada 5 segundos (Para probar si servía 10 segundos se me hacía muy largo XD)
 setInterval(() => {
   updateNumber();
   updateSymbol();
